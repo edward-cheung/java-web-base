@@ -38,7 +38,7 @@
             paper_id = #{paperId}
     </select>
 
-    <select id="queryAllPaper" resultType="cn.edcheung.javaWebBase.pojo.Paper">
+    <select id="queryAllPaper" resultMap="paperResultMap">
         SELECT
             paper_id,
             paper_name,

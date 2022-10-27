@@ -32,9 +32,9 @@ public class PaperController {
         return "allPaper";
     }
 
-    @RequestMapping("toAddPaper")
+    @RequestMapping("/toAddPaper")
     public String toAddPaper() {
-        return "addPaper";
+        return "toAddPaper";
     }
 
     @RequestMapping("/addPaper")
@@ -49,10 +49,10 @@ public class PaperController {
         return "redirect:/paper/allPaper";
     }
 
-    @RequestMapping("toUpdatePaper")
+    @RequestMapping("/toUpdatePaper")
     public String toUpdatePaper(Model model, Long id) {
         model.addAttribute("paper", paperService.queryById(id));
-        return "updatePaper";
+        return "toUpdatePaper";
     }
 
     @RequestMapping("/updatePaper")
