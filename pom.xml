@@ -16,7 +16,6 @@
         <module>util</module>
     </modules>
 
-
     <dependencies>
         <!-- 单元测试 -->
         <!-- https://mvnrepository.com/artifact/org.junit.jupiter/junit-jupiter-api -->
